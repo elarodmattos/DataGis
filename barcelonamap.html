@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c91d472ae558bfd0a96e1279f8db741a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c91d472ae558bfd0a96e1279f8db741a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c91d472ae558bfd0a96e1279f8db741a = L.map(
+                "map_c91d472ae558bfd0a96e1279f8db741a",
+                {
+                    center: [41.3851, 2.1734],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_36273459edf028458b9f1c299f8e61db = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 12, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_36273459edf028458b9f1c299f8e61db.addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+            var tile_layer_e09c9bcd1b623cb51ad907d29075ab87 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCarto\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_e09c9bcd1b623cb51ad907d29075ab87.addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+            var circle_marker_fe4b6000fce745e63b65aa03e57addd9 = L.circleMarker(
+                [41.44703643255814, 2.1999227546511624],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1205, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_aab132403b43bddedc92f29576a66ece = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c9f6eca3eaeaaf55b00750abb4650d8 = $(`<div id="html_5c9f6eca3eaeaaf55b00750abb4650d8" style="width: 100.0%; height: 100.0%;">Baró de Viver: 241.0 parking spaces</div>`)[0];
+                popup_aab132403b43bddedc92f29576a66ece.setContent(html_5c9f6eca3eaeaaf55b00750abb4650d8);
+            
+        
+
+        circle_marker_fe4b6000fce745e63b65aa03e57addd9.bindPopup(popup_aab132403b43bddedc92f29576a66ece)
+        ;
+
+        
+    
+    
+            var circle_marker_b96228fd2e1bdf3ddf46d9236e52877b = L.circleMarker(
+                [41.41583645577299, 2.162004535812133],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.1045, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_b51318bc3f427d7a81a2108555f15447 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_559fe576b2074348139f89189602ed90 = $(`<div id="html_559fe576b2074348139f89189602ed90" style="width: 100.0%; height: 100.0%;">Can Baró: 2209.0 parking spaces</div>`)[0];
+                popup_b51318bc3f427d7a81a2108555f15447.setContent(html_559fe576b2074348139f89189602ed90);
+            
+        
+
+        circle_marker_b96228fd2e1bdf3ddf46d9236e52877b.bindPopup(popup_b51318bc3f427d7a81a2108555f15447)
+        ;
+
+        
+    
+    
+            var circle_marker_5029d294b253bed59aebb00164417423 = L.circleMarker(
+                [41.43484904913793, 2.166426326149425],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4225, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_b59fca21cfd8a898b01e5a71d42924a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_601d8dd521ba129813e13f5eb12c05b0 = $(`<div id="html_601d8dd521ba129813e13f5eb12c05b0" style="width: 100.0%; height: 100.0%;">Can Peguera: 845.0 parking spaces</div>`)[0];
+                popup_b59fca21cfd8a898b01e5a71d42924a7.setContent(html_601d8dd521ba129813e13f5eb12c05b0);
+            
+        
+
+        circle_marker_5029d294b253bed59aebb00164417423.bindPopup(popup_b59fca21cfd8a898b01e5a71d42924a7)
+        ;
+
+        
+    
+    
+            var circle_marker_ab5725518cf117411e55590b5b7efddb = L.circleMarker(
+                [41.443292910819665, 2.1657473281967214],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.34, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_b03d8d99db9e591a9fb4da8b99c1bba0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fad5f6cd68534f0a164ca85bee35787 = $(`<div id="html_2fad5f6cd68534f0a164ca85bee35787" style="width: 100.0%; height: 100.0%;">Canyelles: 680.0 parking spaces</div>`)[0];
+                popup_b03d8d99db9e591a9fb4da8b99c1bba0.setContent(html_2fad5f6cd68534f0a164ca85bee35787);
+            
+        
+
+        circle_marker_ab5725518cf117411e55590b5b7efddb.bindPopup(popup_b03d8d99db9e591a9fb4da8b99c1bba0)
+        ;
+
+        
+    
+    
+            var circle_marker_c131e1dfc5b953d011e58f3b5ba93b61 = L.circleMarker(
+                [41.46125665541667, 2.175713131666667],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.221, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_7c2da83e714b795844eed7d8eb68c757 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df84823db1cf16499a839293f1bb9cb3 = $(`<div id="html_df84823db1cf16499a839293f1bb9cb3" style="width: 100.0%; height: 100.0%;">Ciutat Meridiana: 442.0 parking spaces</div>`)[0];
+                popup_7c2da83e714b795844eed7d8eb68c757.setContent(html_df84823db1cf16499a839293f1bb9cb3);
+            
+        
+
+        circle_marker_c131e1dfc5b953d011e58f3b5ba93b61.bindPopup(popup_7c2da83e714b795844eed7d8eb68c757)
+        ;
+
+        
+    
+    
+            var circle_marker_63764fa1ed89dd22104a6413c7a275d2 = L.circleMarker(
+                [41.406633604905664, 2.2110360514150944],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.444, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_5a398ef70306079978f3380fa5b85b1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aef1160bcd3fedc181430431a3052fe1 = $(`<div id="html_aef1160bcd3fedc181430431a3052fe1" style="width: 100.0%; height: 100.0%;">Diagonal Mar i el Front Marítim del Poblenou: 6888.0 parking spaces</div>`)[0];
+                popup_5a398ef70306079978f3380fa5b85b1c.setContent(html_aef1160bcd3fedc181430431a3052fe1);
+            
+        
+
+        circle_marker_63764fa1ed89dd22104a6413c7a275d2.bindPopup(popup_5a398ef70306079978f3380fa5b85b1c)
+        ;
+
+        
+    
+    
+            var circle_marker_7a71698c407cd588e2a34099edc6c3da = L.circleMarker(
+                [41.433136887597406, 2.159394366623377],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.599, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_f8e0a18e4b10d640890131905a1befe4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2087db2646a2335843141fffd1073df2 = $(`<div id="html_2087db2646a2335843141fffd1073df2" style="width: 100.0%; height: 100.0%;">Horta: 5198.0 parking spaces</div>`)[0];
+                popup_f8e0a18e4b10d640890131905a1befe4.setContent(html_2087db2646a2335843141fffd1073df2);
+            
+        
+
+        circle_marker_7a71698c407cd588e2a34099edc6c3da.bindPopup(popup_f8e0a18e4b10d640890131905a1befe4)
+        ;
+
+        
+    
+    
+            var circle_marker_f0ea7302341ebd31dc5de7c4e1fccdb2 = L.circleMarker(
+                [41.37502258598039, 2.1440123632352943],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.339, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_caa4c0db4103007e18587bedb50c4b02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e67c9ab6dcf3df7b7d9715a4049e9a03 = $(`<div id="html_e67c9ab6dcf3df7b7d9715a4049e9a03" style="width: 100.0%; height: 100.0%;">Hostafrancs: 4678.0 parking spaces</div>`)[0];
+                popup_caa4c0db4103007e18587bedb50c4b02.setContent(html_e67c9ab6dcf3df7b7d9715a4049e9a03);
+            
+        
+
+        circle_marker_f0ea7302341ebd31dc5de7c4e1fccdb2.bindPopup(popup_caa4c0db4103007e18587bedb50c4b02)
+        ;
+
+        
+    
+    
+            var circle_marker_3475b013f41a29905b91ab01709a29f8 = L.circleMarker(
+                [41.431914930871216, 2.1422597717803034],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.212, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_735e399580e0a3d26f9b101690765d42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e50078c199a1e421367a71e5d8d2449c = $(`<div id="html_e50078c199a1e421367a71e5d8d2449c" style="width: 100.0%; height: 100.0%;">Montbau: 2424.0 parking spaces</div>`)[0];
+                popup_735e399580e0a3d26f9b101690765d42.setContent(html_e50078c199a1e421367a71e5d8d2449c);
+            
+        
+
+        circle_marker_3475b013f41a29905b91ab01709a29f8.bindPopup(popup_735e399580e0a3d26f9b101690765d42)
+        ;
+
+        
+    
+    
+            var circle_marker_fc8f51ad33d04bef867fef8452cc8267 = L.circleMarker(
+                [41.417847133838, 2.1864750309613927],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2485, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_e70dedb508143c48889e7fe03bffd267 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cab1077f06dcdc6eebc335d9f6e09d21 = $(`<div id="html_cab1077f06dcdc6eebc335d9f6e09d21" style="width: 100.0%; height: 100.0%;">Navas: 4497.0 parking spaces</div>`)[0];
+                popup_e70dedb508143c48889e7fe03bffd267.setContent(html_cab1077f06dcdc6eebc335d9f6e09d21);
+            
+        
+
+        circle_marker_fc8f51ad33d04bef867fef8452cc8267.bindPopup(popup_e70dedb508143c48889e7fe03bffd267)
+        ;
+
+        
+    
+    
+            var circle_marker_9d7f95f508e95e3e8d7f66045724aa73 = L.circleMarker(
+                [41.390075144486985, 2.1159959872128637],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.784, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_c57de652829d7451176f7b743dc09273 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_040b7c8ccff8df4a95586802f9b56c3f = $(`<div id="html_040b7c8ccff8df4a95586802f9b56c3f" style="width: 100.0%; height: 100.0%;">Pedralbes: 9568.0 parking spaces</div>`)[0];
+                popup_c57de652829d7451176f7b743dc09273.setContent(html_040b7c8ccff8df4a95586802f9b56c3f);
+            
+        
+
+        circle_marker_9d7f95f508e95e3e8d7f66045724aa73.bindPopup(popup_c57de652829d7451176f7b743dc09273)
+        ;
+
+        
+    
+    
+            var circle_marker_16ac0854340fd26ad3053d80cf000c66 = L.circleMarker(
+                [41.43455226472727, 2.177068419709091],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.599, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_09f797b9be03a3453f08d1b29a15c389 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_999c71237eed387a04f48389332b9ce8 = $(`<div id="html_999c71237eed387a04f48389332b9ce8" style="width: 100.0%; height: 100.0%;">Porta: 5198.0 parking spaces</div>`)[0];
+                popup_09f797b9be03a3453f08d1b29a15c389.setContent(html_999c71237eed387a04f48389332b9ce8);
+            
+        
+
+        circle_marker_16ac0854340fd26ad3053d80cf000c66.bindPopup(popup_09f797b9be03a3453f08d1b29a15c389)
+        ;
+
+        
+    
+    
+            var circle_marker_4ee6228ffc175859f13b31150c4fbe25 = L.circleMarker(
+                [41.41176635813586, 2.2031016519220645],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.6535, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_cbf6d206c0195bce4b6ec59210055c70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ee9e07b8d43719134245ecf02164570 = $(`<div id="html_1ee9e07b8d43719134245ecf02164570" style="width: 100.0%; height: 100.0%;">Provençals del Poblenou: 9307.0 parking spaces</div>`)[0];
+                popup_cbf6d206c0195bce4b6ec59210055c70.setContent(html_1ee9e07b8d43719134245ecf02164570);
+            
+        
+
+        circle_marker_4ee6228ffc175859f13b31150c4fbe25.bindPopup(popup_cbf6d206c0195bce4b6ec59210055c70)
+        ;
+
+        
+    
+    
+            var circle_marker_acc01380cbb1594aa24d53256b844aa8 = L.circleMarker(
+                [41.43508157432286, 2.1894437365113757],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2345, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_11c5f1a6ba0a11dfb8aa4a2745318780 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d8bf0f5be45a9b8e456765bbf361dd4 = $(`<div id="html_5d8bf0f5be45a9b8e456765bbf361dd4" style="width: 100.0%; height: 100.0%;">Sant Andreu: 10469.0 parking spaces</div>`)[0];
+                popup_11c5f1a6ba0a11dfb8aa4a2745318780.setContent(html_5d8bf0f5be45a9b8e456765bbf361dd4);
+            
+        
+
+        circle_marker_acc01380cbb1594aa24d53256b844aa8.bindPopup(popup_11c5f1a6ba0a11dfb8aa4a2745318780)
+        ;
+
+        
+    
+    
+            var circle_marker_430cd77cad47c6578a6f9b92aae95c09 = L.circleMarker(
+                [41.37811100820202, 2.1595585541818183],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.952, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_5f83c23afd54cf18d907fe7c31ddf5db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12d97dff03bee03743e4e5455abc3a7a = $(`<div id="html_12d97dff03bee03743e4e5455abc3a7a" style="width: 100.0%; height: 100.0%;">Sant Antoni: 9904.0 parking spaces</div>`)[0];
+                popup_5f83c23afd54cf18d907fe7c31ddf5db.setContent(html_12d97dff03bee03743e4e5455abc3a7a);
+            
+        
+
+        circle_marker_430cd77cad47c6578a6f9b92aae95c09.bindPopup(popup_5f83c23afd54cf18d907fe7c31ddf5db)
+        ;
+
+        
+    
+    
+            var circle_marker_cf6782578a17498025106fbe7552e7af = L.circleMarker(
+                [41.42590594952016, 2.1374916554702494],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.054, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_7ebb13d5f9d4d77b41741e87da63c0b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2d2ada9f3612ddfdf8e9fa076051af7 = $(`<div id="html_a2d2ada9f3612ddfdf8e9fa076051af7" style="width: 100.0%; height: 100.0%;">Sant Genís dels Agudells: 2108.0 parking spaces</div>`)[0];
+                popup_7ebb13d5f9d4d77b41741e87da63c0b2.setContent(html_a2d2ada9f3612ddfdf8e9fa076051af7);
+            
+        
+
+        circle_marker_cf6782578a17498025106fbe7552e7af.bindPopup(popup_7ebb13d5f9d4d77b41741e87da63c0b2)
+        ;
+
+        
+    
+    
+            var circle_marker_cfde3188e044724e7507787a4e2da8b6 = L.circleMarker(
+                [41.397335138714055, 2.1437474356124064],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.8875, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_dbe47c5314f5cd8cc9933fb58dd31b81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_363783ada35659e1ba1a6bdc33914a78 = $(`<div id="html_363783ada35659e1ba1a6bdc33914a78" style="width: 100.0%; height: 100.0%;">Sant Gervasi-Galvany: 23775.0 parking spaces</div>`)[0];
+                popup_dbe47c5314f5cd8cc9933fb58dd31b81.setContent(html_363783ada35659e1ba1a6bdc33914a78);
+            
+        
+
+        circle_marker_cfde3188e044724e7507787a4e2da8b6.bindPopup(popup_dbe47c5314f5cd8cc9933fb58dd31b81)
+        ;
+
+        
+    
+    
+            var circle_marker_4644e6fcda38a3fc6fcdecdbc5162e6c = L.circleMarker(
+                [41.40711597981609, 2.132884138988506],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.3365, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_6fea04aed2a973b443801fe79fcb889a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29fde9b96de806964527bdf6da7724fb = $(`<div id="html_29fde9b96de806964527bdf6da7724fb" style="width: 100.0%; height: 100.0%;">Sant Gervasi-la Bonanova: 10673.0 parking spaces</div>`)[0];
+                popup_6fea04aed2a973b443801fe79fcb889a.setContent(html_29fde9b96de806964527bdf6da7724fb);
+            
+        
+
+        circle_marker_4644e6fcda38a3fc6fcdecdbc5162e6c.bindPopup(popup_6fea04aed2a973b443801fe79fcb889a)
+        ;
+
+        
+    
+    
+            var circle_marker_2cb073dfc460138d5854d6d710e63a9e = L.circleMarker(
+                [41.41683864292114, 2.1978900082885304],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.1905, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_56f804aac21176c9327f053a5d8180b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ac987d6b415453ebe6e93246bd561dc = $(`<div id="html_1ac987d6b415453ebe6e93246bd561dc" style="width: 100.0%; height: 100.0%;">Sant Martí­ de Provençals: 8381.0 parking spaces</div>`)[0];
+                popup_56f804aac21176c9327f053a5d8180b9.setContent(html_1ac987d6b415453ebe6e93246bd561dc);
+            
+        
+
+        circle_marker_2cb073dfc460138d5854d6d710e63a9e.bindPopup(popup_56f804aac21176c9327f053a5d8180b9)
+        ;
+
+        
+    
+    
+            var circle_marker_3465b222140ac7e725ddc88ff54d9971 = L.circleMarker(
+                [41.386858259747285, 2.1809818536101084],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.371, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_228086065556ae1f89288f8a3a64b5e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21ddc2ba13f0ca22534d7715bbff1de8 = $(`<div id="html_21ddc2ba13f0ca22534d7715bbff1de8" style="width: 100.0%; height: 100.0%;">Sant Pere, Santa Caterina i la Ribera: 6742.0 parking spaces</div>`)[0];
+                popup_228086065556ae1f89288f8a3a64b5e0.setContent(html_21ddc2ba13f0ca22534d7715bbff1de8);
+            
+        
+
+        circle_marker_3465b222140ac7e725ddc88ff54d9971.bindPopup(popup_228086065556ae1f89288f8a3a64b5e0)
+        ;
+
+        
+    
+    
+            var circle_marker_fe3ae868134160c8f3188a346dbec384 = L.circleMarker(
+                [41.378660774327116, 2.1362785379917186],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.935, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_c5fcf91f58c08e5d250a5e357ab0f33a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0776b3fffe2f13128af832611e5f28a4 = $(`<div id="html_0776b3fffe2f13128af832611e5f28a4" style="width: 100.0%; height: 100.0%;">Sants: 9870.0 parking spaces</div>`)[0];
+                popup_c5fcf91f58c08e5d250a5e357ab0f33a.setContent(html_0776b3fffe2f13128af832611e5f28a4);
+            
+        
+
+        circle_marker_fe3ae868134160c8f3188a346dbec384.bindPopup(popup_c5fcf91f58c08e5d250a5e357ab0f33a)
+        ;
+
+        
+    
+    
+            var circle_marker_166a25c7f69281d43dfb087d8de0410c = L.circleMarker(
+                [41.37488157093426, 2.1275509661764707],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.206, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_b552dce17f747e426d3ad3660ba2b39b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e82e56dc16c03b63fbc8a7f66868b72 = $(`<div id="html_3e82e56dc16c03b63fbc8a7f66868b72" style="width: 100.0%; height: 100.0%;">Sants-Badal: 4412.0 parking spaces</div>`)[0];
+                popup_b552dce17f747e426d3ad3660ba2b39b.setContent(html_3e82e56dc16c03b63fbc8a7f66868b72);
+            
+        
+
+        circle_marker_166a25c7f69281d43dfb087d8de0410c.bindPopup(popup_b552dce17f747e426d3ad3660ba2b39b)
+        ;
+
+        
+    
+    
+            var circle_marker_8568e9924fff67fdebf8004975bb6eca = L.circleMarker(
+                [41.397541471464486, 2.121102974230044],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5375, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_53aed44294650d2fb1f5bb0748d753bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93e89ec156bdf7cdbddb2454341022f0 = $(`<div id="html_93e89ec156bdf7cdbddb2454341022f0" style="width: 100.0%; height: 100.0%;">Sarrià: 9075.0 parking spaces</div>`)[0];
+                popup_53aed44294650d2fb1f5bb0748d753bc.setContent(html_93e89ec156bdf7cdbddb2454341022f0);
+            
+        
+
+        circle_marker_8568e9924fff67fdebf8004975bb6eca.bindPopup(popup_53aed44294650d2fb1f5bb0748d753bc)
+        ;
+
+        
+    
+    
+            var circle_marker_b2d9137ae29536d736bb803f8a7dc57c = L.circleMarker(
+                [41.458238819444446, 2.1790496277777778],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.08, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_d70bc64933524b24539857cfcd69997a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47d576d6f7714c52cda2f4cd20042765 = $(`<div id="html_47d576d6f7714c52cda2f4cd20042765" style="width: 100.0%; height: 100.0%;">Torre Baró: 160.0 parking spaces</div>`)[0];
+                popup_d70bc64933524b24539857cfcd69997a.setContent(html_47d576d6f7714c52cda2f4cd20042765);
+            
+        
+
+        circle_marker_b2d9137ae29536d736bb803f8a7dc57c.bindPopup(popup_d70bc64933524b24539857cfcd69997a)
+        ;
+
+        
+    
+    
+            var circle_marker_dbc10e908e238f724f9e4edb06a0079c = L.circleMarker(
+                [41.46426412666667, 2.18409197],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.032, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_798a5a403a6634feede0bb50de4f93a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b06f1e14cab98af5f73de9483c97b904 = $(`<div id="html_b06f1e14cab98af5f73de9483c97b904" style="width: 100.0%; height: 100.0%;">Vallbona: 64.0 parking spaces</div>`)[0];
+                popup_798a5a403a6634feede0bb50de4f93a9.setContent(html_b06f1e14cab98af5f73de9483c97b904);
+            
+        
+
+        circle_marker_dbc10e908e238f724f9e4edb06a0079c.bindPopup(popup_798a5a403a6634feede0bb50de4f93a9)
+        ;
+
+        
+    
+    
+            var circle_marker_dbdb142e753d486608fc8b8f6cf6ef61 = L.circleMarker(
+                [41.415413779609175, 2.14243653075616],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.163, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_3e40769e52be71072aaa667ff4a4bfd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f1fefeda5deed538165d92f92f8793c = $(`<div id="html_1f1fefeda5deed538165d92f92f8793c" style="width: 100.0%; height: 100.0%;">Vallcarca i els Penitents: 4326.0 parking spaces</div>`)[0];
+                popup_3e40769e52be71072aaa667ff4a4bfd5.setContent(html_1f1fefeda5deed538165d92f92f8793c);
+            
+        
+
+        circle_marker_dbdb142e753d486608fc8b8f6cf6ef61.bindPopup(popup_3e40769e52be71072aaa667ff4a4bfd5)
+        ;
+
+        
+    
+    
+            var circle_marker_db99472c8988dddf04c21e88445c3fdb = L.circleMarker(
+                [41.417338755882355, 2.1040818352941177],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.0435, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_055ec2ee2e8efd4b2fc13c72503a39a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7592a8a7a81a4d6f3760e68c480c6ed4 = $(`<div id="html_7592a8a7a81a4d6f3760e68c480c6ed4" style="width: 100.0%; height: 100.0%;">Vallvidrera, el Tibidabo i les Planes: 87.0 parking spaces</div>`)[0];
+                popup_055ec2ee2e8efd4b2fc13c72503a39a4.setContent(html_7592a8a7a81a4d6f3760e68c480c6ed4);
+            
+        
+
+        circle_marker_db99472c8988dddf04c21e88445c3fdb.bindPopup(popup_055ec2ee2e8efd4b2fc13c72503a39a4)
+        ;
+
+        
+    
+    
+            var circle_marker_e520176179fa8c494b25c7445c5be2fd = L.circleMarker(
+                [41.44225134484375, 2.1754745467187497],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9255, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_93097cc4c53d3bce356052b441d00e86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83e4f0a80370b492f6f3e259bf175fa1 = $(`<div id="html_83e4f0a80370b492f6f3e259bf175fa1" style="width: 100.0%; height: 100.0%;">Verdun: 1851.0 parking spaces</div>`)[0];
+                popup_93097cc4c53d3bce356052b441d00e86.setContent(html_83e4f0a80370b492f6f3e259bf175fa1);
+            
+        
+
+        circle_marker_e520176179fa8c494b25c7445c5be2fd.bindPopup(popup_93097cc4c53d3bce356052b441d00e86)
+        ;
+
+        
+    
+    
+            var circle_marker_2e9b766d6bd4f2dd480fe053191519b8 = L.circleMarker(
+                [41.42866342695925, 2.1735184371473357],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.204, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_7c81988264c7f7373077c5e5fcc48275 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e120673a5394677e6a40565eb181d60 = $(`<div id="html_1e120673a5394677e6a40565eb181d60" style="width: 100.0%; height: 100.0%;">Vilapicina i la Torre Llobeta: 4408.0 parking spaces</div>`)[0];
+                popup_7c81988264c7f7373077c5e5fcc48275.setContent(html_1e120673a5394677e6a40565eb181d60);
+            
+        
+
+        circle_marker_2e9b766d6bd4f2dd480fe053191519b8.bindPopup(popup_7c81988264c7f7373077c5e5fcc48275)
+        ;
+
+        
+    
+    
+            var circle_marker_88e24ad4d6072ed9ec6ef707f83b02d9 = L.circleMarker(
+                [41.41158638628231, 2.167919266136514],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7495, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_d05f6e37993cfc513e6dd309086432af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cda4d893c51d0064843e63037f3e59a = $(`<div id="html_6cda4d893c51d0064843e63037f3e59a" style="width: 100.0%; height: 100.0%;">el Baix Guinardó: 5499.0 parking spaces</div>`)[0];
+                popup_d05f6e37993cfc513e6dd309086432af.setContent(html_6cda4d893c51d0064843e63037f3e59a);
+            
+        
+
+        circle_marker_88e24ad4d6072ed9ec6ef707f83b02d9.bindPopup(popup_d05f6e37993cfc513e6dd309086432af)
+        ;
+
+        
+    
+    
+            var circle_marker_32fe10512df82faa8d4aa228ed3be9e2 = L.circleMarker(
+                [41.38216699126214, 2.176537265695793],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.3835, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_78d379c2fee3a77469de99337c26aff5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6a065476ea75e3126c9200f963a92ff = $(`<div id="html_d6a065476ea75e3126c9200f963a92ff" style="width: 100.0%; height: 100.0%;">el Barri Gòtic: 4767.0 parking spaces</div>`)[0];
+                popup_78d379c2fee3a77469de99337c26aff5.setContent(html_d6a065476ea75e3126c9200f963a92ff);
+            
+        
+
+        circle_marker_32fe10512df82faa8d4aa228ed3be9e2.bindPopup(popup_78d379c2fee3a77469de99337c26aff5)
+        ;
+
+        
+    
+    
+            var circle_marker_3184ebeb51902c4afb3ae04970e167b7 = L.circleMarker(
+                [41.41521057506849, 2.2136595313972602],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.337, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_7b5e5d4aa9524ec53d06ba3287e6a798 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a3eaa0de82fdda2ade618ba8d837a26 = $(`<div id="html_5a3eaa0de82fdda2ade618ba8d837a26" style="width: 100.0%; height: 100.0%;">el Besòs i el Maresme: 8674.0 parking spaces</div>`)[0];
+                popup_7b5e5d4aa9524ec53d06ba3287e6a798.setContent(html_5a3eaa0de82fdda2ade618ba8d837a26);
+            
+        
+
+        circle_marker_3184ebeb51902c4afb3ae04970e167b7.bindPopup(popup_7b5e5d4aa9524ec53d06ba3287e6a798)
+        ;
+
+        
+    
+    
+            var circle_marker_c68ae5bfd912fa7570fe40179c6455c2 = L.circleMarker(
+                [41.43769937811321, 2.2033103415094337],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.068, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_5d15730f396aa04e9dd7d199492d1045 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1363242a7bfaef7ee07826f8560ed701 = $(`<div id="html_1363242a7bfaef7ee07826f8560ed701" style="width: 100.0%; height: 100.0%;">el Bon Pastor: 2136.0 parking spaces</div>`)[0];
+                popup_5d15730f396aa04e9dd7d199492d1045.setContent(html_1363242a7bfaef7ee07826f8560ed701);
+            
+        
+
+        circle_marker_c68ae5bfd912fa7570fe40179c6455c2.bindPopup(popup_5d15730f396aa04e9dd7d199492d1045)
+        ;
+
+        
+    
+    
+            var circle_marker_8fcec0525d654b5d8ffcb37ed6a511e8 = L.circleMarker(
+                [41.40635529444189, 2.1652069393661],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0875, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_915701cf9993fb109775e51520e8fd40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_211dbbc9867972a5d6c3b9e4a265dfa5 = $(`<div id="html_211dbbc9867972a5d6c3b9e4a265dfa5" style="width: 100.0%; height: 100.0%;">el Camp d'en Grassot i Gràcia Nova: 8175.0 parking spaces</div>`)[0];
+                popup_915701cf9993fb109775e51520e8fd40.setContent(html_211dbbc9867972a5d6c3b9e4a265dfa5);
+            
+        
+
+        circle_marker_8fcec0525d654b5d8ffcb37ed6a511e8.bindPopup(popup_915701cf9993fb109775e51520e8fd40)
+        ;
+
+        
+    
+    
+            var circle_marker_41b39a19fd64423b42381afc6abae11e = L.circleMarker(
+                [41.41177755710754, 2.1819274445817882],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4295, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_03b6aaa5e3a688b17218af9be9c07756 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e810bd0f0c54672dc309f05ab1146454 = $(`<div id="html_e810bd0f0c54672dc309f05ab1146454" style="width: 100.0%; height: 100.0%;">el Camp de l'Arpa del Clot: 8859.0 parking spaces</div>`)[0];
+                popup_03b6aaa5e3a688b17218af9be9c07756.setContent(html_e810bd0f0c54672dc309f05ab1146454);
+            
+        
+
+        circle_marker_41b39a19fd64423b42381afc6abae11e.bindPopup(popup_03b6aaa5e3a688b17218af9be9c07756)
+        ;
+
+        
+    
+    
+            var circle_marker_26e929561e34c2eb593ac4ed9bf90b64 = L.circleMarker(
+                [41.42305299102487, 2.1558005020618554],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.648, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_15e4b171b39cb08abc442fa765ddb42c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb7f8c7d63ef6dd27b1cc6d081b47ee7 = $(`<div id="html_eb7f8c7d63ef6dd27b1cc6d081b47ee7" style="width: 100.0%; height: 100.0%;">el Carmel: 5296.0 parking spaces</div>`)[0];
+                popup_15e4b171b39cb08abc442fa765ddb42c.setContent(html_eb7f8c7d63ef6dd27b1cc6d081b47ee7);
+            
+        
+
+        circle_marker_26e929561e34c2eb593ac4ed9bf90b64.bindPopup(popup_15e4b171b39cb08abc442fa765ddb42c)
+        ;
+
+        
+    
+    
+            var circle_marker_f3af6a71b914ff13e252d74ce5712146 = L.circleMarker(
+                [41.41002770971744, 2.189854315368711],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.9915, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_6ed8ae6f235fb69a003dbf1502604fe9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cb84ff59663266562294e1566b5f893 = $(`<div id="html_9cb84ff59663266562294e1566b5f893" style="width: 100.0%; height: 100.0%;">el Clot: 5983.0 parking spaces</div>`)[0];
+                popup_6ed8ae6f235fb69a003dbf1502604fe9.setContent(html_9cb84ff59663266562294e1566b5f893);
+            
+        
+
+        circle_marker_f3af6a71b914ff13e252d74ce5712146.bindPopup(popup_6ed8ae6f235fb69a003dbf1502604fe9)
+        ;
+
+        
+    
+    
+            var circle_marker_5c0d032711173514a319e2b03a3e7075 = L.circleMarker(
+                [41.41782344139785, 2.1488427559139787],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6445, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_4d2c4222e5f47d21c5f161143cd04b3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21c2db005c5dcf4f035f76c4c74f53b9 = $(`<div id="html_21c2db005c5dcf4f035f76c4c74f53b9" style="width: 100.0%; height: 100.0%;">el Coll: 1289.0 parking spaces</div>`)[0];
+                popup_4d2c4222e5f47d21c5f161143cd04b3d.setContent(html_21c2db005c5dcf4f035f76c4c74f53b9);
+            
+        
+
+        circle_marker_5c0d032711173514a319e2b03a3e7075.bindPopup(popup_4d2c4222e5f47d21c5f161143cd04b3d)
+        ;
+
+        
+    
+    
+            var circle_marker_3f3971247804b87fbb5eae183e7714af = L.circleMarker(
+                [41.42460376783042, 2.1809253036575234],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.493, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_c3dc48cf95d402fe3efd525030982d25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_753c74b1c933f16545307436f9a4484a = $(`<div id="html_753c74b1c933f16545307436f9a4484a" style="width: 100.0%; height: 100.0%;">el Congrés i els Indians: 4986.0 parking spaces</div>`)[0];
+                popup_c3dc48cf95d402fe3efd525030982d25.setContent(html_753c74b1c933f16545307436f9a4484a);
+            
+        
+
+        circle_marker_3f3971247804b87fbb5eae183e7714af.bindPopup(popup_c3dc48cf95d402fe3efd525030982d25)
+        ;
+
+        
+    
+    
+            var circle_marker_8a231abdd8c193bff7e533fcd51b3ea6 = L.circleMarker(
+                [41.39737634667221, 2.18069233656406],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.395, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_dd27460aae9ccf65ca624a743e649e8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3041666202c816f6b404d1a419a7c0d0 = $(`<div id="html_3041666202c816f6b404d1a419a7c0d0" style="width: 100.0%; height: 100.0%;">el Fort Pienc: 10790.0 parking spaces</div>`)[0];
+                popup_dd27460aae9ccf65ca624a743e649e8e.setContent(html_3041666202c816f6b404d1a419a7c0d0);
+            
+        
+
+        circle_marker_8a231abdd8c193bff7e533fcd51b3ea6.bindPopup(popup_dd27460aae9ccf65ca624a743e649e8e)
+        ;
+
+        
+    
+    
+            var circle_marker_6f881e9b098d800e5f0ddc76a8baa8d0 = L.circleMarker(
+                [41.419291324434006, 2.1752933928662967],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3905, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_f15b7d0284d1d6f326118d0d6bb1df94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d52dd950d19f33ac18f3ab8a26fd5638 = $(`<div id="html_d52dd950d19f33ac18f3ab8a26fd5638" style="width: 100.0%; height: 100.0%;">el Guinardó: 8781.0 parking spaces</div>`)[0];
+                popup_f15b7d0284d1d6f326118d0d6bb1df94.setContent(html_d52dd950d19f33ac18f3ab8a26fd5638);
+            
+        
+
+        circle_marker_6f881e9b098d800e5f0ddc76a8baa8d0.bindPopup(popup_f15b7d0284d1d6f326118d0d6bb1df94)
+        ;
+
+        
+    
+    
+            var circle_marker_907e9a444d229a4beb62bf7c45affc55 = L.circleMarker(
+                [41.397378604207816, 2.1902080698153714],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.7695, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_7313e0be2a56e19e25d27df0dde2205f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92f5c094619a4006ea33005d4d56a6af = $(`<div id="html_92f5c094619a4006ea33005d4d56a6af" style="width: 100.0%; height: 100.0%;">el Parc i la Llacuna del Poblenou: 13539.0 parking spaces</div>`)[0];
+                popup_7313e0be2a56e19e25d27df0dde2205f.setContent(html_92f5c094619a4006ea33005d4d56a6af);
+            
+        
+
+        circle_marker_907e9a444d229a4beb62bf7c45affc55.bindPopup(popup_7313e0be2a56e19e25d27df0dde2205f)
+        ;
+
+        
+    
+    
+            var circle_marker_1184e036957bde491af5f6629bfd169f = L.circleMarker(
+                [41.37245499775497, 2.1626922725465043],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.155, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_d4b0a782c1c320b6bca170bffb7c42cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed8c44494a59446c1785c169e9458406 = $(`<div id="html_ed8c44494a59446c1785c169e9458406" style="width: 100.0%; height: 100.0%;">el Poble Sec: 14310.0 parking spaces</div>`)[0];
+                popup_d4b0a782c1c320b6bca170bffb7c42cd.setContent(html_ed8c44494a59446c1785c169e9458406);
+            
+        
+
+        circle_marker_1184e036957bde491af5f6629bfd169f.bindPopup(popup_d4b0a782c1c320b6bca170bffb7c42cd)
+        ;
+
+        
+    
+    
+            var circle_marker_a5f85ad65a90f8b4a6f90b1e55dfd7e1 = L.circleMarker(
+                [41.40091547935179, 2.201666644901675],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.9005, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_1d0aa14f5d65a190020e29232b0265a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d19fe538ab07ebdbc4c11ec460fd162 = $(`<div id="html_3d19fe538ab07ebdbc4c11ec460fd162" style="width: 100.0%; height: 100.0%;">el Poblenou: 13801.0 parking spaces</div>`)[0];
+                popup_1d0aa14f5d65a190020e29232b0265a7.setContent(html_3d19fe538ab07ebdbc4c11ec460fd162);
+            
+        
+
+        circle_marker_a5f85ad65a90f8b4a6f90b1e55dfd7e1.bindPopup(popup_1d0aa14f5d65a190020e29232b0265a7)
+        ;
+
+        
+    
+    
+            var circle_marker_73def87c64deea482bbfdd4244d851d1 = L.circleMarker(
+                [41.4063619756698, 2.1442851256335986],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5275, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_0deee24be667fb394c4ae36040e0797e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03f8af612aa41683cf2663e6f3d1311e = $(`<div id="html_03f8af612aa41683cf2663e6f3d1311e" style="width: 100.0%; height: 100.0%;">el Putxet i el Farró: 7055.0 parking spaces</div>`)[0];
+                popup_0deee24be667fb394c4ae36040e0797e.setContent(html_03f8af612aa41683cf2663e6f3d1311e);
+            
+        
+
+        circle_marker_73def87c64deea482bbfdd4244d851d1.bindPopup(popup_0deee24be667fb394c4ae36040e0797e)
+        ;
+
+        
+    
+    
+            var circle_marker_c7882c2c07a682ce49bd9d15996b497b = L.circleMarker(
+                [41.379959780764636, 2.1692909440860215],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1635, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_70f118c67f973d11c3974eb86e40678a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e28d03f74d5d7609ddd58bf908ae38f = $(`<div id="html_5e28d03f74d5d7609ddd58bf908ae38f" style="width: 100.0%; height: 100.0%;">el Raval: 10327.0 parking spaces</div>`)[0];
+                popup_70f118c67f973d11c3974eb86e40678a.setContent(html_5e28d03f74d5d7609ddd58bf908ae38f);
+            
+        
+
+        circle_marker_c7882c2c07a682ce49bd9d15996b497b.bindPopup(popup_70f118c67f973d11c3974eb86e40678a)
+        ;
+
+        
+    
+    
+            var circle_marker_ef7cf1e2a07a004b82be82a38a416728 = L.circleMarker(
+                [41.43211074394904, 2.169743324044586],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.94, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_121c6e66d1f00b180ba50081d468b410 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f8646f7a87f641081a8b11ab337bbb1 = $(`<div id="html_9f8646f7a87f641081a8b11ab337bbb1" style="width: 100.0%; height: 100.0%;">el Turó de la Peira: 1880.0 parking spaces</div>`)[0];
+                popup_121c6e66d1f00b180ba50081d468b410.setContent(html_9f8646f7a87f641081a8b11ab337bbb1);
+            
+        
+
+        circle_marker_ef7cf1e2a07a004b82be82a38a416728.bindPopup(popup_121c6e66d1f00b180ba50081d468b410)
+        ;
+
+        
+    
+    
+            var circle_marker_38eeaa42b1ebe324a8a4c70d4d2a85dc = L.circleMarker(
+                [41.38974727148463, 2.1545708980379334],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.796, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_e9cfa17c25c3ce635a0a23c7cc9beef1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_933386d60bc87c6833645dec32c99d27 = $(`<div id="html_933386d60bc87c6833645dec32c99d27" style="width: 100.0%; height: 100.0%;">l'Antiga Esquerra de l'Eixample: 15592.0 parking spaces</div>`)[0];
+                popup_e9cfa17c25c3ce635a0a23c7cc9beef1.setContent(html_933386d60bc87c6833645dec32c99d27);
+            
+        
+
+        circle_marker_38eeaa42b1ebe324a8a4c70d4d2a85dc.bindPopup(popup_e9cfa17c25c3ce635a0a23c7cc9beef1)
+        ;
+
+        
+    
+    
+            var circle_marker_b3061a1ece49c4833d0f625eb0e97c26 = L.circleMarker(
+                [41.37943137984949, 2.1900183617056856],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.447, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_03773c6fa0effc54b8868fe6a90133b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44a89d1dcdb39e992a1b346b3a770ae2 = $(`<div id="html_44a89d1dcdb39e992a1b346b3a770ae2" style="width: 100.0%; height: 100.0%;">la Barceloneta: 8894.0 parking spaces</div>`)[0];
+                popup_03773c6fa0effc54b8868fe6a90133b5.setContent(html_44a89d1dcdb39e992a1b346b3a770ae2);
+            
+        
+
+        circle_marker_b3061a1ece49c4833d0f625eb0e97c26.bindPopup(popup_03773c6fa0effc54b8868fe6a90133b5)
+        ;
+
+        
+    
+    
+            var circle_marker_aec0e436d789672323a1be2d9a6024f9 = L.circleMarker(
+                [41.36964589008499, 2.137421333286119],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.674, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_64e476f2fd74b4499f5959b83e16efbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a24e9d1488692fa63c447e9dedec0eac = $(`<div id="html_a24e9d1488692fa63c447e9dedec0eac" style="width: 100.0%; height: 100.0%;">la Bordeta: 3348.0 parking spaces</div>`)[0];
+                popup_64e476f2fd74b4499f5959b83e16efbe.setContent(html_a24e9d1488692fa63c447e9dedec0eac);
+            
+        
+
+        circle_marker_aec0e436d789672323a1be2d9a6024f9.bindPopup(popup_64e476f2fd74b4499f5959b83e16efbe)
+        ;
+
+        
+    
+    
+            var circle_marker_17a58337b7abac83ce5597c1a82eacb6 = L.circleMarker(
+                [41.42843558761062, 2.1536439734513273],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.371, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_a455a9d4a6991d58bf47d06c7c2be30e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef9a6370f7240396a842fad9ac051edc = $(`<div id="html_ef9a6370f7240396a842fad9ac051edc" style="width: 100.0%; height: 100.0%;">la Clota: 742.0 parking spaces</div>`)[0];
+                popup_a455a9d4a6991d58bf47d06c7c2be30e.setContent(html_ef9a6370f7240396a842fad9ac051edc);
+            
+        
+
+        circle_marker_17a58337b7abac83ce5597c1a82eacb6.bindPopup(popup_a455a9d4a6991d58bf47d06c7c2be30e)
+        ;
+
+        
+    
+    
+            var circle_marker_e118bdf1755241de6aecd17f3316cc07 = L.circleMarker(
+                [41.394158504989484, 2.1689328872873257],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.176, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_758b7086ec58278498c0a3ac57fe0eb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ee6410cd82b3e61acd523c5334e25b1 = $(`<div id="html_2ee6410cd82b3e61acd523c5334e25b1" style="width: 100.0%; height: 100.0%;">la Dreta de l'Eixample: 28352.0 parking spaces</div>`)[0];
+                popup_758b7086ec58278498c0a3ac57fe0eb3.setContent(html_2ee6410cd82b3e61acd523c5334e25b1);
+            
+        
+
+        circle_marker_e118bdf1755241de6aecd17f3316cc07.bindPopup(popup_758b7086ec58278498c0a3ac57fe0eb3)
+        ;
+
+        
+    
+    
+            var circle_marker_49da4af2602043319025626eb4ef5b04 = L.circleMarker(
+                [41.42493210806619, 2.1654317076525333],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.704, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_224a74148c965e41168bbfdb509c7c91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2b0a883b8e04094f4ced9a084ddb23a = $(`<div id="html_a2b0a883b8e04094f4ced9a084ddb23a" style="width: 100.0%; height: 100.0%;">la Font d'en Fargues: 3408.0 parking spaces</div>`)[0];
+                popup_224a74148c965e41168bbfdb509c7c91.setContent(html_a2b0a883b8e04094f4ced9a084ddb23a);
+            
+        
+
+        circle_marker_49da4af2602043319025626eb4ef5b04.bindPopup(popup_224a74148c965e41168bbfdb509c7c91)
+        ;
+
+        
+    
+    
+            var circle_marker_5564fcf39932280764c5f2bccff7d195 = L.circleMarker(
+                [41.37033606728972, 2.1450081893457944],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.1435, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_38e27a42f7810c92f4abeeb4774c1b0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4e24fe540d29de50ffed43beafeb5f2 = $(`<div id="html_d4e24fe540d29de50ffed43beafeb5f2" style="width: 100.0%; height: 100.0%;">la Font de la Guatlla: 2287.0 parking spaces</div>`)[0];
+                popup_38e27a42f7810c92f4abeeb4774c1b0a.setContent(html_d4e24fe540d29de50ffed43beafeb5f2);
+            
+        
+
+        circle_marker_5564fcf39932280764c5f2bccff7d195.bindPopup(popup_38e27a42f7810c92f4abeeb4774c1b0a)
+        ;
+
+        
+    
+    
+            var circle_marker_fe76fdb3ae2223715224fc6b0de89ea2 = L.circleMarker(
+                [41.43904868426396, 2.169210028172589],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.501, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_4fc894ece9f91723aa0e6de758978273 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1b90f52e98fe1fd1926c3304a7b577e = $(`<div id="html_f1b90f52e98fe1fd1926c3304a7b577e" style="width: 100.0%; height: 100.0%;">la Guineueta: 3002.0 parking spaces</div>`)[0];
+                popup_4fc894ece9f91723aa0e6de758978273.setContent(html_f1b90f52e98fe1fd1926c3304a7b577e);
+            
+        
+
+        circle_marker_fe76fdb3ae2223715224fc6b0de89ea2.bindPopup(popup_4fc894ece9f91723aa0e6de758978273)
+        ;
+
+        
+    
+    
+            var circle_marker_9cfd454cb073578a0749a62aacce53ac = L.circleMarker(
+                [41.36024209090287, 2.1386894145690833],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7535, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_f89301cd6deb0afac1184786a526dcfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_468c7e284582aefb3d0964471773a653 = $(`<div id="html_468c7e284582aefb3d0964471773a653" style="width: 100.0%; height: 100.0%;">la Marina de Port: 5507.0 parking spaces</div>`)[0];
+                popup_f89301cd6deb0afac1184786a526dcfb.setContent(html_468c7e284582aefb3d0964471773a653);
+            
+        
+
+        circle_marker_9cfd454cb073578a0749a62aacce53ac.bindPopup(popup_f89301cd6deb0afac1184786a526dcfb)
+        ;
+
+        
+    
+    
+            var circle_marker_8d0b88db19430b49ebb7e8855036dca5 = L.circleMarker(
+                [41.35243774730769, 2.1437760126923076],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7415, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_e415315dcb5bf689308af63f746112c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33f1fc1a21aadc22b5bf37574b01d12e = $(`<div id="html_33f1fc1a21aadc22b5bf37574b01d12e" style="width: 100.0%; height: 100.0%;">la Marina del Prat Vermell: 1483.0 parking spaces</div>`)[0];
+                popup_e415315dcb5bf689308af63f746112c8.setContent(html_33f1fc1a21aadc22b5bf37574b01d12e);
+            
+        
+
+        circle_marker_8d0b88db19430b49ebb7e8855036dca5.bindPopup(popup_e415315dcb5bf689308af63f746112c8)
+        ;
+
+        
+    
+    
+            var circle_marker_1efda07e481f59b93b27e662f61221c3 = L.circleMarker(
+                [41.38072832522334, 2.120421718759853],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.1865, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_86e717220cea48b8afd863e73e930e6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e32caa4871187e502e3747baff6b3e1 = $(`<div id="html_4e32caa4871187e502e3747baff6b3e1" style="width: 100.0%; height: 100.0%;">la Maternitat i Sant Ramon: 12373.0 parking spaces</div>`)[0];
+                popup_86e717220cea48b8afd863e73e930e6f.setContent(html_4e32caa4871187e502e3747baff6b3e1);
+            
+        
+
+        circle_marker_1efda07e481f59b93b27e662f61221c3.bindPopup(popup_86e717220cea48b8afd863e73e930e6f)
+        ;
+
+        
+    
+    
+            var circle_marker_784daf0b1645bd8fcd54ebe294397438 = L.circleMarker(
+                [41.383494235910426, 2.149023730845108],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.476, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_0ca963a582b81b0ed5d35a39161aac71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31fe20deeafca85360429ade822212b9 = $(`<div id="html_31fe20deeafca85360429ade822212b9" style="width: 100.0%; height: 100.0%;">la Nova Esquerra de l'Eixample: 16952.0 parking spaces</div>`)[0];
+                popup_0ca963a582b81b0ed5d35a39161aac71.setContent(html_31fe20deeafca85360429ade822212b9);
+            
+        
+
+        circle_marker_784daf0b1645bd8fcd54ebe294397438.bindPopup(popup_0ca963a582b81b0ed5d35a39161aac71)
+        ;
+
+        
+    
+    
+            var circle_marker_2fa3434c3bc065ae2b3d99c5d1eb83e4 = L.circleMarker(
+                [41.44282185423322, 2.1815070175718847],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.7575, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_172ef3ca88155615f1157abd820e9948 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d7067310b3e8c8c237413f4edb1d506 = $(`<div id="html_4d7067310b3e8c8c237413f4edb1d506" style="width: 100.0%; height: 100.0%;">la Prosperitat: 3515.0 parking spaces</div>`)[0];
+                popup_172ef3ca88155615f1157abd820e9948.setContent(html_4d7067310b3e8c8c237413f4edb1d506);
+            
+        
+
+        circle_marker_2fa3434c3bc065ae2b3d99c5d1eb83e4.bindPopup(popup_172ef3ca88155615f1157abd820e9948)
+        ;
+
+        
+    
+    
+            var circle_marker_3f85adea4fdd6ecf180bba33902858d2 = L.circleMarker(
+                [41.405678021565414, 2.176312314285714],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.995, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_f68d24df633b2d6fdc401ade489d36d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_836dea2431e125ce0b4f7653b09a2ab7 = $(`<div id="html_836dea2431e125ce0b4f7653b09a2ab7" style="width: 100.0%; height: 100.0%;">la Sagrada Família: 13990.0 parking spaces</div>`)[0];
+                popup_f68d24df633b2d6fdc401ade489d36d5.setContent(html_836dea2431e125ce0b4f7653b09a2ab7);
+            
+        
+
+        circle_marker_3f85adea4fdd6ecf180bba33902858d2.bindPopup(popup_f68d24df633b2d6fdc401ade489d36d5)
+        ;
+
+        
+    
+    
+            var circle_marker_f0de2a8da0f41b851ccffe7d2f6fa6c1 = L.circleMarker(
+                [41.42342948235294, 2.188616566778075],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.987, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_3e155eba3697cf510958673db45421c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d21c0f1f2d4b0e872298a1d4d78c0e00 = $(`<div id="html_d21c0f1f2d4b0e872298a1d4d78c0e00" style="width: 100.0%; height: 100.0%;">la Sagrera: 5974.0 parking spaces</div>`)[0];
+                popup_3e155eba3697cf510958673db45421c8.setContent(html_d21c0f1f2d4b0e872298a1d4d78c0e00);
+            
+        
+
+        circle_marker_f0de2a8da0f41b851ccffe7d2f6fa6c1.bindPopup(popup_3e155eba3697cf510958673db45421c8)
+        ;
+
+        
+    
+    
+            var circle_marker_08dc75433cf39c24bee41142e29f3932 = L.circleMarker(
+                [41.41187140423841, 2.1547530854304635],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.633, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_981e5e0752130a44d66635141e7e2550 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_840e808c9da72deaea3a2f334b98ad0c = $(`<div id="html_840e808c9da72deaea3a2f334b98ad0c" style="width: 100.0%; height: 100.0%;">la Salut: 3266.0 parking spaces</div>`)[0];
+                popup_981e5e0752130a44d66635141e7e2550.setContent(html_840e808c9da72deaea3a2f334b98ad0c);
+            
+        
+
+        circle_marker_08dc75433cf39c24bee41142e29f3932.bindPopup(popup_981e5e0752130a44d66635141e7e2550)
+        ;
+
+        
+    
+    
+            var circle_marker_9be475ef66cf1afd51ee2259574186e8 = L.circleMarker(
+                [41.422839647580645, 2.1471867158602147],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.339, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_648acbd4b7a9e03c92f005770e309e5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_973e7ea663c869b517d8bb53fabef2a8 = $(`<div id="html_973e7ea663c869b517d8bb53fabef2a8" style="width: 100.0%; height: 100.0%;">la Teixonera: 2678.0 parking spaces</div>`)[0];
+                popup_648acbd4b7a9e03c92f005770e309e5c.setContent(html_973e7ea663c869b517d8bb53fabef2a8);
+            
+        
+
+        circle_marker_9be475ef66cf1afd51ee2259574186e8.bindPopup(popup_648acbd4b7a9e03c92f005770e309e5c)
+        ;
+
+        
+    
+    
+            var circle_marker_a21e8fb1bd1bc684fccb591e61acdd1c = L.circleMarker(
+                [41.44926612096071, 2.18477591069869],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8895, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_2ab8712ccf3af7fad344fc4cb4d0528b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2970006e01ae6c58071d16a426aad85f = $(`<div id="html_2970006e01ae6c58071d16a426aad85f" style="width: 100.0%; height: 100.0%;">la Trinitat Nova: 1779.0 parking spaces</div>`)[0];
+                popup_2ab8712ccf3af7fad344fc4cb4d0528b.setContent(html_2970006e01ae6c58071d16a426aad85f);
+            
+        
+
+        circle_marker_a21e8fb1bd1bc684fccb591e61acdd1c.bindPopup(popup_2ab8712ccf3af7fad344fc4cb4d0528b)
+        ;
+
+        
+    
+    
+            var circle_marker_57df56dfa38e1601b688502cc9e8507c = L.circleMarker(
+                [41.45145015220588, 2.1916282191176473],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3185, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_6522b73cc03771e2788be31043af65ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a35221d13c081e79faaec62b3b9f1228 = $(`<div id="html_a35221d13c081e79faaec62b3b9f1228" style="width: 100.0%; height: 100.0%;">la Trinitat Vella: 637.0 parking spaces</div>`)[0];
+                popup_6522b73cc03771e2788be31043af65ae.setContent(html_a35221d13c081e79faaec62b3b9f1228);
+            
+        
+
+        circle_marker_57df56dfa38e1601b688502cc9e8507c.bindPopup(popup_6522b73cc03771e2788be31043af65ae)
+        ;
+
+        
+    
+    
+            var circle_marker_e0e60cb677e986fa46316b4fff360adf = L.circleMarker(
+                [41.43088099362963, 2.148069658074074],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0255, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_196e81ae745961f9a23966307c9d243b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f959b2b62ee859161b9d7a38702ae75 = $(`<div id="html_5f959b2b62ee859161b9d7a38702ae75" style="width: 100.0%; height: 100.0%;">la Vall d'Hebron: 4051.0 parking spaces</div>`)[0];
+                popup_196e81ae745961f9a23966307c9d243b.setContent(html_5f959b2b62ee859161b9d7a38702ae75);
+            
+        
+
+        circle_marker_e0e60cb677e986fa46316b4fff360adf.bindPopup(popup_196e81ae745961f9a23966307c9d243b)
+        ;
+
+        
+    
+    
+            var circle_marker_8c16260d5328983d3f047bd52cd2e3a7 = L.circleMarker(
+                [41.42235211850481, 2.2037621382679498],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.06, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_70e2e1c22ee977cb34801a77f4d33913 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3a2c4b3f7dbc38fb632a96b56a4a69d = $(`<div id="html_c3a2c4b3f7dbc38fb632a96b56a4a69d" style="width: 100.0%; height: 100.0%;">la Verneda i la Pau: 10120.0 parking spaces</div>`)[0];
+                popup_70e2e1c22ee977cb34801a77f4d33913.setContent(html_c3a2c4b3f7dbc38fb632a96b56a4a69d);
+            
+        
+
+        circle_marker_8c16260d5328983d3f047bd52cd2e3a7.bindPopup(popup_70e2e1c22ee977cb34801a77f4d33913)
+        ;
+
+        
+    
+    
+            var circle_marker_7a619cd10d6e855248d4df5495561494 = L.circleMarker(
+                [41.39186673557047, 2.195211412368169],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5135, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_d039e2b2a490df4802f06c479b918199 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4b9cc705c779a13bc613257134d242a = $(`<div id="html_e4b9cc705c779a13bc613257134d242a" style="width: 100.0%; height: 100.0%;">la Vila Olímpica del Poblenou: 7027.0 parking spaces</div>`)[0];
+                popup_d039e2b2a490df4802f06c479b918199.setContent(html_e4b9cc705c779a13bc613257134d242a);
+            
+        
+
+        circle_marker_7a619cd10d6e855248d4df5495561494.bindPopup(popup_d039e2b2a490df4802f06c479b918199)
+        ;
+
+        
+    
+    
+            var circle_marker_6b7d8b0b504090d92e585cff9cd87a52 = L.circleMarker(
+                [41.40346146986573, 2.1575647577324717],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.278, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_a038d76be8f51630c7cee6b3beebc0b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da667ecedd604bffcf038ab38b8a3f4c = $(`<div id="html_da667ecedd604bffcf038ab38b8a3f4c" style="width: 100.0%; height: 100.0%;">la Vila de Gràcia: 12556.0 parking spaces</div>`)[0];
+                popup_a038d76be8f51630c7cee6b3beebc0b1.setContent(html_da667ecedd604bffcf038ab38b8a3f4c);
+            
+        
+
+        circle_marker_6b7d8b0b504090d92e585cff9cd87a52.bindPopup(popup_a038d76be8f51630c7cee6b3beebc0b1)
+        ;
+
+        
+    
+    
+            var circle_marker_78bb5c9f29500f528de39e2cf871f555 = L.circleMarker(
+                [41.386237777489534, 2.134982399051604],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5975, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_4005bb451a556ce246bda1e9cf527b86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e0149a4dec3580d045ee2264e9803ef = $(`<div id="html_1e0149a4dec3580d045ee2264e9803ef" style="width: 100.0%; height: 100.0%;">les Corts: 19195.0 parking spaces</div>`)[0];
+                popup_4005bb451a556ce246bda1e9cf527b86.setContent(html_1e0149a4dec3580d045ee2264e9803ef);
+            
+        
+
+        circle_marker_78bb5c9f29500f528de39e2cf871f555.bindPopup(popup_4005bb451a556ce246bda1e9cf527b86)
+        ;
+
+        
+    
+    
+            var circle_marker_10a4a95f29cc4b74a3891d3bae382bde = L.circleMarker(
+                [41.44668159220431, 2.1749376150537634],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4205, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_df1e9033cc188ea91331d33448801a16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f6f73e188169937303636319942bcb2 = $(`<div id="html_0f6f73e188169937303636319942bcb2" style="width: 100.0%; height: 100.0%;">les Roquetes: 841.0 parking spaces</div>`)[0];
+                popup_df1e9033cc188ea91331d33448801a16.setContent(html_0f6f73e188169937303636319942bcb2);
+            
+        
+
+        circle_marker_10a4a95f29cc4b74a3891d3bae382bde.bindPopup(popup_df1e9033cc188ea91331d33448801a16)
+        ;
+
+        
+    
+    
+            var circle_marker_8cc2630c1928194ecb950fb6628881a0 = L.circleMarker(
+                [41.39832773259542, 2.129822366335878],
+                {"bubblingMouseEvents": true, "color": "#da5a05", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da5a05", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.996, "stroke": true, "weight": 3}
+            ).addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+        var popup_8a60244423fd4a331cd088f915ae9219 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e8e4ce6f3b46e4c887882093753d7fd = $(`<div id="html_2e8e4ce6f3b46e4c887882093753d7fd" style="width: 100.0%; height: 100.0%;">les Tres Torres: 5992.0 parking spaces</div>`)[0];
+                popup_8a60244423fd4a331cd088f915ae9219.setContent(html_2e8e4ce6f3b46e4c887882093753d7fd);
+            
+        
+
+        circle_marker_8cc2630c1928194ecb950fb6628881a0.bindPopup(popup_8a60244423fd4a331cd088f915ae9219)
+        ;
+
+        
+    
+    
+            tile_layer_36273459edf028458b9f1c299f8e61db.addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+    
+            tile_layer_e09c9bcd1b623cb51ad907d29075ab87.addTo(map_c91d472ae558bfd0a96e1279f8db741a);
+        
+</script>
+</html>
